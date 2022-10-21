@@ -14,6 +14,8 @@
     box-sizing: border-box;
 }
 
+
+
 main.container{
     width: 100vw;
     height: 100vh;
@@ -119,6 +121,7 @@ button p{
 span{
     width: 30px;
 }
+
 
 @media screen and (max-width: 667px) {
     section.card{
