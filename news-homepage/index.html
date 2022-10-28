@@ -11,21 +11,58 @@
 <body>
     <div class="container">
         <header>
-            <span class="logo"><img src="images/logo.svg" alt=""></span>
-            <input type="checkbox" id="burger">
-            <label for="burger">
-                <span class="icon-burger"><img src="images/icon-menu.svg" alt=""></span>
-            </label>
-            <nav>
-                <ul>
+            <span class="logo">
+                <img src="images/logo.svg" alt="">
+            </span><!--logo-->
+
+            <input type="checkbox" id="checkbox" onclick="check()">
+            <label for="checkbox">
+                <span id="icon-burger">
+                    <img id="icon-menu" src="images/icon-menu.svg" alt="">
+                </span><!--icon-burger-->
+            </label><!--checkbox-->
+            <nav id="nav">
+                <ul id="menu">
                     <li><a href=""></a>Home</li>
                     <li><a href=""></a>New</li>
                     <li><a href=""></a>Popular</li>
                     <li><a href=""></a>Trending</li>
                     <li><a href=""></a>Categories</li>
-                </ul>
-            </nav>
+                </ul><!--menu-->
+            </nav><!--nav-->
         </header>
+
+        <section class="title">
+            <div class="title-img">
+                <picture>
+                    <source media="(max-width: 667px)" srcset="images/image-web-3-mobile.jpg">
+                    <img src="images/image-web-3-desktop.jpg" alt="">
+                </picture>
+            </div>
+            <div class="title-txt">
+                <h1>The Bringht<br> Future of Web<br> 3.0?</h1>
+
+                <p>We dive into the next evolution of the web that<br> claims to put the power of the platforms back<br> into the hands of people. But is it really <br>fulfilling its promise?</p>
+            </div>
+            <div class="button">
+                <button>READ MORE</button>
+            </div>
+        </section>
     </div>
+
+    <script>
+        var checkbox = document.getElementById('checkbox');
+        var nav = document.getElementById('nav');
+        var iconMenu = document.getElementById('icon-menu');
+        function check(){
+            if(checkbox.checked == true){
+                nav.classList.add("active");
+                iconMenu.setAttribute('src','images/icon-menu-close.svg');
+            }else if(checkbox.checked == false){
+                nav.classList.remove("active");
+                iconMenu.setAttribute('src','images/icon-menu.svg');
+            }
+        }
+    </script>
 </body>
 </html>
