@@ -1,14 +1,31 @@
+:root{
+    /*font family*/
+    --Inter: 'Inter', sans-serif;
+    /*primary colors*/
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    /*neutral colors*/
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
 @media screen and (min-width: 1440px) {
     .container{
-        border: 1px solid black;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: none;
+        max-width: 1300px;
     }
 
     header{
+        margin-top: 20px;
         width: 100%;
+    }
+
+    .logo{
+        width: 58%;
     }
 
     label{
@@ -16,11 +33,92 @@
     }
 
     #nav{
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        width: 40%;
     }
 
     #menu{
-        display: block;
+        display: flex;
+        flex-direction: row;
         position: relative;
+        margin: 0 0 0 10px;
+    }
+
+    #menu a{
+        margin-left: 50px;
+    }
+
+    #menu a:hover{
+        color: var(--Soft-orange);
+    }
+
+    section.title{
+        width: 67.6%;
+    }
+
+    div.title-txt{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    div.title-txt h1{
+        width: 50%;
+        height: 100%;
+    }
+
+    div.title-txt p{
+        width: 50%;
+        height: 80%;
+        font-size: 1em;
+    }
+
+    div.title-txt p > button{
+        background-color: var(--Soft-red);
+        color: white;
+        border: none;
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    div.title-txt p > button:hover{
+        background-color: var(--Very-dark-blue);
+    }
+
+    section.new{
+        width: 30%;
+        padding: 0;
+        margin-top: 35px;
+        margin-left: 30px;
+    }
+
+    section.new a{
+        text-decoration: none;
+    }
+
+    section.new h3:hover{
+        color: var(--Soft-orange);
+    }
+
+    section.article-section{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    section.article-section a{
+        text-decoration: none;
+    }
+
+    section.article-section h3{
+        color: black;
+    }
+
+    section.article-section h3:hover{
+        color: var(--Soft-orange);
     }
 }
