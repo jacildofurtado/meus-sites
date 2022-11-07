@@ -124,7 +124,15 @@ div.title-txt p{
     margin-top: 10px;
 }
 
-
+div.title-txt p > button{
+    background-color: var(--Soft-red);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
 
 section.new{
     display: flex;
