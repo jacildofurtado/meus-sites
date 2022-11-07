@@ -70,18 +70,27 @@ label{
     display: none;
 }
 
+
 #menu a{
     text-decoration: none;
+    font-weight: 700;
 }
 
 #nav.active #menu{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     background-color: white;
     width: 50%;
     max-width: 250px;
     height: 100vh;
+
+}
+
+#nav.active #menu > li{
+    position: relative;
+    top: 70px;
+    left: 30px;
 }
 
 section.title{
