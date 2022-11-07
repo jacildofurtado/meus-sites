@@ -55,10 +55,7 @@ label{
     position: relative;
     display: block;
     margin-top: 10px;
-}
-
-span.icon-buger img{
-    width: 100%;
+    left: auto;
 }
 
 #nav{
