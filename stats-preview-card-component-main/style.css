@@ -1,0 +1,42 @@
+@charset"UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+section.container{
+    background-color: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card{
+    display:flex;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+}
+
+div.text{
+    width: 50%;
+}
+
+div.text h2, h3{
+    color: hsl(0, 0%, 100%);
+}
+
+div.text p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+div.img{
+    background-image: url("images/image-header-desktop.jpg");
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+}
